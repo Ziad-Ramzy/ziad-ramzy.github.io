@@ -14,8 +14,8 @@ pre, code {
   border: 1px solid #333;
   border-radius: 6px;
 }
-.highlight {
-  background-color: #fdfdfd;
+.highlighter-rouge .highlight {
+    background: rgb(255, 255, 255);
 }
 /* Fix code inside pre (avoid double background) */
 pre code {
