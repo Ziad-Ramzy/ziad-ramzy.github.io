@@ -13,8 +13,9 @@ pre, code {
   border: 1px solid #333;
   border-radius: 6px;
 }
-.post-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 40px;
+
+.wrapper {
+  max-width: 800px; /* adjust to your liking */
+  margin: 0 auto;   /* centers the wrapper */
+  padding: 0 2rem;  /* increases side spacing */
 }
