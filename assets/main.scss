@@ -110,3 +110,9 @@ code:not([class]) {
   background: #264F78 !important;
   color: inherit !important;
 }
+
+.post-content {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
