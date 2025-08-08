@@ -5,6 +5,7 @@
 @import "minima";
 
 
+/* Apply to both generally */
 pre, code {
   font-family: monospace;
   font-size: 13px;
@@ -13,6 +14,19 @@ pre, code {
   border: 1px solid #333;
   border-radius: 6px;
 }
+
+/* Fix code inside pre (avoid double background) */
+pre code {
+  background-color: transparent;
+  border: none;
+}
+
+/* Ensure .highlight and its children match */
+.highlight, .highlight pre, .highlight code {
+  background-color: #fffafa !important;
+  color: #000000 !important;
+}
+
 
 pre {
   padding: 13px;
