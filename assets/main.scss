@@ -14,6 +14,11 @@ pre, code {
   border-radius: 6px;
 }
 
+pre {
+  padding: 13px;
+  overflow-x: auto;
+}
+
 .wrapper {
   max-width: 800px; /* adjust to your liking */
   margin: 0 auto;   /* centers the wrapper */
