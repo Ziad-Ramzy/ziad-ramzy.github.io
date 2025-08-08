@@ -9,14 +9,13 @@
 pre, code {
   font-family: monospace;
   font-size: 13px;
-  background-color: #fffafa;
+  background-color: #fdfcfcf8;
   color: #000000;
   border: 1px solid #333;
   border-radius: 6px;
-  padding: 1em;
 }
 .highlighter-rouge .highlight {
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.986);
 }
 /* Fix code inside pre (avoid double background) */
 pre code {
