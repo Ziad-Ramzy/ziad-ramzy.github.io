@@ -14,7 +14,9 @@ pre, code {
   border: 1px solid #333;
   border-radius: 6px;
 }
-
+.highlight {
+  background-color: #fdfdfd;
+}
 /* Fix code inside pre (avoid double background) */
 pre code {
   background-color: transparent;
