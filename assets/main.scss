@@ -1,0 +1,43 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+/* VS Code Dark+ Theme Code Block Style */
+
+pre, code {
+  font-family: Menlo, Consolas, "Courier New", monospace;
+  font-size: 15px;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  border: 1px solid #333;
+  border-radius: 6px;
+}
+
+pre {
+  padding: 12px;
+  overflow-x: auto;
+}
+
+/* Specific syntax highlighting overrides */
+.highlight .c     { color: #6a9955; font-style: italic; }  /* Comment */
+.highlight .err   { color: #f44747; }                     /* Error */
+.highlight .k     { color: #569cd6; }                     /* Keyword */
+.highlight .o     { color: #d4d4d4; }                     /* Operator */
+.highlight .cm    { color: #6a9955; font-style: italic; } /* Comment multiline */
+.highlight .cp    { color: #d4d4d4; }                     /* Preprocessor */
+.highlight .cs    { color: #6a9955; font-style: italic; } /* Special comment */
+.highlight .gd    { color: #f44747; }                     /* Deleted */
+.highlight .gi    { color: #b5cea8; }                     /* Inserted */
+.highlight .kp    { color: #569cd6; }                     /* Keyword pseudo */
+.highlight .nb    { color: #9cdcfe; }                     /* Built-in name */
+.highlight .nc    { color: #4ec9b0; }                     /* Class */
+.highlight .no    { color: #dcdcaa; }                     /* Constant */
+.highlight .nd    { color: #4ec9b0; }                     /* Decorator */
+.highlight .nf    { color: #dcdcaa; }                     /* Function */
+.highlight .nn    { color: #4ec9b0; }                     /* Namespace */
+.highlight .nt    { color: #569cd6; }                     /* Tag */
+.highlight .nv    { color: #9cdcfe; }                     /* Variable */
+.highlight .s     { color: #ce9178; }                     /* String */
+.highlight .na    { color: #9cdcfe; }                     /* Attribute name */
+.highlight .w     { color: #d4d4d4; }                     /* Whitespace */

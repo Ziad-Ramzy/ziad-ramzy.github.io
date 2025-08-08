@@ -28,7 +28,7 @@ twitter_username:
 github_username:  Ziad-Ramzy
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
@@ -51,4 +51,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-theme: minima
+# theme: minima
