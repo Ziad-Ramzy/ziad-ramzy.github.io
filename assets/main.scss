@@ -3,24 +3,110 @@
 ---
 
 @import "minima";
-/* VS Code Dark+ Theme Code Block Style */
 
-pre, code {
-  font-family: monospace;
-  font-size: 12px;
-  background-color: #f6f3f3;
-  color: #000000;
-  border: 1px solid #333;
-  border-radius: 6px;
+/* ===== VS Code Dark+ Theme EXACT Replica ===== */
+$vscode-bg: #1e1e1e;
+$vscode-text: #d4d4d4;
+$vscode-comment: #6A9955;
+$vscode-keyword: #C586C0;
+$vscode-string: #CE9178;
+$vscode-number: #B5CEA8;
+$vscode-function: #DCDCAA;
+$vscode-operator: #d4d4d4;
+$vscode-variable: #9CDCFE;
+$vscode-class: #4EC9B0;
+$vscode-tag: #569CD6;
+
+/* Reset Minima's styles */
+.highlight, .highlight * {
+  all: revert !important;
 }
 
-pre {
-  padding: 12px;
-  overflow-x: auto;
+/* Base container styling */
+.highlight {
+  background-color: $vscode-bg !important;
+  color: $vscode-text !important;
+  border-radius: 0 !important;
+  padding: 1em !important;
+  font-family: Consolas, Menlo, Monaco, 'Courier New', monospace !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  margin: 20px 0 !important;
+  overflow: auto !important;
+  box-shadow: none !important;
+  border-left: 4px solid #3e3e42 !important;
 }
 
+/* Pre block inside highlight */
+.highlight pre {
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  overflow: visible !important;
+  color: inherit !important;
+}
+
+/* Syntax token styles - EXACT VSCode colors */
+.highlight .c  { color: $vscode-comment !important; font-style: italic !important; } /* Comments */
+.highlight .k  { color: $vscode-keyword !important; } /* Keywords */
+.highlight .kd { color: $vscode-keyword !important; } /* Keyword.Declaration */
+.highlight .kt { color: $vscode-class !important; } /* Keyword.Type */
+.highlight .s  { color: $vscode-string !important; } /* Strings */
+.highlight .n  { color: $vscode-variable !important; } /* Names */
+.highlight .o  { color: $vscode-operator !important; } /* Operators */
+.highlight .p  { color: $vscode-operator !important; } /* Punctuation */
+.highlight .m  { color: $vscode-number !important; } /* Numbers */
+.highlight .f  { color: $vscode-function !important; } /* Functions */
+.highlight .c1 { color: $vscode-comment !important; font-style: italic !important; } /* Single-line comments */
+.highlight .cm { color: $vscode-comment !important; font-style: italic !important; } /* Multi-line comments */
+.highlight .nb { color: $vscode-function !important; } /* Built-in names */
+.highlight .nc { color: $vscode-class !important; } /* Class names */
+.highlight .nn { color: $vscode-class !important; } /* Namespace */
+.highlight .nt { color: $vscode-tag !important; } /* Tag names */
+.highlight .kr { color: $vscode-keyword !important; } /* Keyword.Reserved */
+.highlight .si { color: $vscode-string !important; } /* String.Interpol */
+.highlight .ss { color: $vscode-string !important; } /* String.Symbol */
+.highlight .sx { color: $vscode-string !important; } /* String.Other */
+.highlight .vc { color: $vscode-variable !important; } /* Variable.Class */
+.highlight .vg { color: $vscode-variable !important; } /* Variable.Global */
+.highlight .vi { color: $vscode-variable !important; } /* Variable.Instance */
+.highlight .il { color: $vscode-number !important; } /* Literal.Number.Integer.Long */
+
+/* Inline code styling */
+code:not([class]) {
+  background-color: #1e1e1e !important;
+  color: #d4d4d4 !important;
+  border: none !important;
+  border-radius: 3px !important;
+  padding: 2px 4px !important;
+  font-family: Consolas, Menlo, Monaco, 'Courier New', monospace !important;
+  font-size: 13px !important;
+}
+
+/* Preserve your custom page layout */
 .page {
   max-width: 700px;
   margin: 0 auto;
   padding: 40px;
+}
+
+/* Fix for line numbers if enabled */
+.highlight .lineno {
+  color: #858585 !important;
+  background: #1e1e1e !important;
+  border-right: 1px solid #3e3e42 !important;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
+  display: inline-block;
+  width: 2.5em;
+  text-align: right;
+  user-select: none;
+}
+
+/* Selection highlight */
+.highlight::selection,
+.highlight *::selection {
+  background: #264F78 !important;
+  color: inherit !important;
 }
